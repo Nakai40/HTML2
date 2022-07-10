@@ -9,7 +9,71 @@
 </head>
 
 <body>
-
+    <div class="corce-container">
+        <h2>コース一覧</h2>
+        <table>
+            <tr>
+                <th>コース</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+            </tr>
+            <tr>
+                <td>職業</td>
+                <td>アヒージョ</td>
+                <td>アクアパッツァ</td>
+                <td>ポトフ</td>
+            </tr>
+            <tr>
+                <td>主菜</td>
+                <td>パエリア</td>
+                <td>ボロネーゼ</td>
+                <td>フォアグラ</td>
+            </tr>
+            <tr>
+                <td>デザート</td>
+                <td>フラン</td>
+                <td>ティラミス</td>
+                <td>カヌレ</td>
+            </tr>
+        </table>
+    </div>
+    <div class="reservation">
+        <h2>Reservation</h2>
+        <form action="/form.php" method="post">
+            <div>
+                <label for="name">名前</label>
+                <input type="text" id="name" name="name" value="" placeholder="Name">
+            </div>
+            <div>
+                <label for="email">メールアドレス</label>
+                <input type="mail" id="email" name="email" name="name" value="" placeholder="Mail Adress">
+            </div>
+            <div>
+                <label for="cource">コース</label>
+                <label><input type="radio" name="項目名" value="値">A</label>
+                <label><input type="radio" name="項目名" value="値">B</label>
+                <label><input type="radio" name="項目名" value="値">C</label>
+            </div>
+            <div>
+                <label for="branch">支店名</label>
+                <select name="branch-list">
+                    <option value="スペイン">スペイン</option>
+                    <option value="イタリア">イタリア</option>
+                    <option value="フランス">フランス</option>
+                  </select>
+            </div>
+            <div>
+                <label for="person">人物</label>
+                <input type="mail" id="person" name="person">
+            </div>
+            <div>
+                <label for="comment">コメント</label>
+                <textarea id="message" name="message" placeholder="コメント"></textarea>
+            </div>
+            <input type="submit" value="送信する">
+        </form>
+    </div>
 </body>
 
 </html>
